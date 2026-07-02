@@ -5,21 +5,21 @@
 class Workledger < Formula
   desc "Local-first CLI for managing canonical worklogs"
   homepage "https://github.com/solitus0/workledger"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/solitus0/workledger/releases/download/v0.1.7/workledger_0.1.7_darwin_amd64.tar.gz"
-      sha256 "e4940c87fc20269ec44c9be566dacec22296bb85af6e176fc03b65a6eda76fde"
+      url "https://github.com/solitus0/workledger/releases/download/v0.1.8/workledger_0.1.8_darwin_amd64.tar.gz"
+      sha256 "e472fcd35bd3861a8f13c7cd6cfecce2f42787158cad9c35b0bf13b628c364cc"
 
       define_method(:install) do
         bin.install "workledger"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/solitus0/workledger/releases/download/v0.1.7/workledger_0.1.7_darwin_arm64.tar.gz"
-      sha256 "3637b13d41980f7e03829e9211321ba6d2e35518bbbea53c90e9ea1727c2210a"
+      url "https://github.com/solitus0/workledger/releases/download/v0.1.8/workledger_0.1.8_darwin_arm64.tar.gz"
+      sha256 "b5be3367033d64bcffc1f929c92d54bae7271e21588c91cc9536f36cb1407e66"
 
       define_method(:install) do
         bin.install "workledger"
@@ -29,15 +29,15 @@ class Workledger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solitus0/workledger/releases/download/v0.1.7/workledger_0.1.7_linux_amd64.tar.gz"
-      sha256 "cc1af723f696232c65cd0ca842217f1c49694f96dd13e33d10c1e5787d87b342"
+      url "https://github.com/solitus0/workledger/releases/download/v0.1.8/workledger_0.1.8_linux_amd64.tar.gz"
+      sha256 "d9155ba1cd4b2093ea82bbff276a7a48ea92e5188ccb831915c809e974e34fd6"
       define_method(:install) do
         bin.install "workledger"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solitus0/workledger/releases/download/v0.1.7/workledger_0.1.7_linux_arm64.tar.gz"
-      sha256 "de6cf4c9f8938a54da0b1014d6caf8a14bb2cb3f532aacfe619556f76dcf0a5e"
+      url "https://github.com/solitus0/workledger/releases/download/v0.1.8/workledger_0.1.8_linux_arm64.tar.gz"
+      sha256 "50e02a1fa9f656b1004c36e16a7bba56a4cf1e4dc36268a12ffbaa023fab0a66"
       define_method(:install) do
         bin.install "workledger"
       end
